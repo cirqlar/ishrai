@@ -9,17 +9,17 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="page-padding">
-      <div className="w-full h-20 flex justify-between items-center">
+    <header className="page-padding sm:flex sm:justify-between sm:items-center">
+      <div className="h-20 flex justify-between items-center">
         <div>
           <img className={styles.logoImage} src="/logo/ishrai-white.jpg" alt="ISHRAI Nigeria Logo" />
-          <h1 className="hidden">ISHRAI</h1>
+          <h1 className="hidden sm:inline-block">ISHRAI</h1>
         </div>
-        <div>
-          <MdMenu onClick={() => setMenuOpen(!menuOpen)} />
+        <div className="sm:hidden">
+          <MdMenu size='1.5rem' onClick={() => setMenuOpen(!menuOpen)} />
         </div>
       </div>
-      <div className={cn('w-full', { 'hidden': !menuOpen }, "sm:block")}>
+      <div className={cn({ 'hidden': !menuOpen }, "sm:block")}>
         <nav>
           <Link href="/">
             <a>Home</a>
