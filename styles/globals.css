@@ -21,14 +21,14 @@
   }
 
   .page-left-padding {
-    @apply pl-24;
+    @apply pl-4;
   }
 
   .page-right-padding {
-    @apply pr-24;
+    @apply pr-4;
   }
 
   .page-padding {
-    @apply px-24;
+    @apply px-4;
   }
 }

@@ -1,12 +1,25 @@
+import { useState } from 'react';
 import Link from 'next/link'
+import cn from 'classnames';
+import { MdMenu } from 'react-icons/md'
+
+import styles from './css/header.module.css';
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className="h-20 flex justify-between items-center">
-      <div>
-        <h1>ISHRAI</h1>
+    <header className="page-padding">
+      <div className="w-full h-20 flex justify-between items-center">
+        <div>
+          <img className={styles.logoImage} src="/logo/ishrai-white.jpg" alt="ISHRAI Nigeria Logo" />
+          <h1 className="hidden">ISHRAI</h1>
+        </div>
+        <div>
+          <MdMenu onClick={() => setMenuOpen(!menuOpen)} />
+        </div>
       </div>
-      <div>
+      <div className={cn('w-full', { 'hidden': !menuOpen }, "sm:block")}>
         <nav>
           <Link href="/">
             <a>Home</a>
