@@ -19,15 +19,31 @@
     box-sizing: border-box;
   }
 
-  .page-left-padding {
-    @apply pl-4;
-  }
+  @responsive {
+    .page-left-padding {
+      @apply pl-4;
+    }
 
-  .page-right-padding {
-    @apply pr-4;
-  }
+    .page-right-padding {
+      @apply pr-4;
+    }
 
-  .page-padding {
-    @apply px-4;
+    .page-padding {
+      @apply px-4;
+    }
+
+    @screen bfirst {
+      .page-left-padding {
+        @apply pl-12;
+      }
+  
+      .page-right-padding {
+        @apply pr-12;
+      }
+  
+      .page-padding {
+        @apply px-12;
+      }
+    }
   }
 }
