@@ -29,7 +29,7 @@ export default function Header({ className }) {
       <div
         className={cn(
           { hidden: !isMobileNavOpen },
-          "bg-gray-800 text-white page-padding pt-2 pb-4",
+          "bg-gray-900 text-white page-padding pt-2 pb-4",
           "first:p-0 first:flex first:items-center first:bg-transparent first:text-black"
         )}
       >
