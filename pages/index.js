@@ -56,6 +56,15 @@ export default function Home() {
           <HomeIcon className="mx-8 pb-4" icon={<FaBalanceScale size="45px" />} title="Human Rights" />
         </div>
       </div>
+      <div className="page-padding py-12 text-center flex flex-col items-center">
+        <h3 className="font-bold italic text-3xl first:text-4xl">Our Partners</h3>
+        <div className="pt-6 flex flex-wrap justify-center items-start">
+          <img className=" max-h-48 pb-4 pr-4" src="/partners/heartland_alliance.png" alt="Heartland Alliance" />
+          <img className=" max-h-48 pb-4 pr-4" src="/partners/ISDAO.png" alt="ISDAO" />
+          <img className=" max-h-48 pb-4 pr-4" src="/partners/FrontlineAIDS.png" alt="Frontline AIDS" />
+          <img className=" max-h-48 pb-4 pr-4" src="/partners/viiv.png" alt="VIIV" />
+        </div>
+      </div>
     </>
   );
 }
