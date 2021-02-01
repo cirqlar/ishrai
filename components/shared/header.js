@@ -6,7 +6,7 @@ import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaCaretDown } from "re
 
 import styles from "./css/header.module.css";
 
-export default function Header() {
+export default function Header({ className }) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isWhoWeAreDropdownOpen, setIsWWADO] = useState(false);
   const [isMoreDropdownOpen, setIsMDO] = useState(false);
@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <header className="first:page-padding first:flex first:justify-between first:items-center">
+    <header className={cn("first:page-padding first:flex first:justify-between first:items-center", className)}>
       <div className="h-20 flex justify-between items-center page-padding first:p-0">
         <div className="flex items-center">
           <img className={styles.logoImage} src="/logo/ishrai-white.jpg" alt="ISHRAI Nigeria Logo" />
