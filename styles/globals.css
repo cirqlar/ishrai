@@ -32,7 +32,7 @@
       @apply px-4;
     }
 
-    @screen bfirst {
+    @screen first {
       .page-left-padding {
         @apply pl-12;
       }

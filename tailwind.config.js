@@ -3,9 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-      bfirst: '500px',
-      first: '760px',
-      second: '880px',
+      first: '576px',
+      second: '768px',
+      third: '992px',
     },
     extend: {},
   },
