@@ -81,7 +81,8 @@ export default function Header() {
                 { 'first:hidden': !isMoreDropdownOpen },
                 "first:absolute",
                 styles.dropdown,
-                "second:inline-block"
+                "second:inline-block second:relative",
+                styles.expandedDropdown,
               )}
             >
               <Link href="/">

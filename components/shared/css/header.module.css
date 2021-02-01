@@ -43,4 +43,17 @@
   nav > .link_item:not(.submenu_link):last-child {
     @apply mr-4;
   }
+
+  .expandedDropdown {
+    @apply p-0;
+    @apply bg-transparent border-0 rounded-none;
+    @apply w-auto shadow-none;
+  }
+
+  .expandedDropdown .submenu_link {
+    top: 0;
+    @apply border-0 p-0;
+    @apply inline-block;
+    @apply mr-6;
+  }
 }
