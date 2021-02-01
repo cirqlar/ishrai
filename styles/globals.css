@@ -40,6 +40,11 @@
       background-color: var(--grey-background);
     }
 
+    .body-text {
+      font-family: 'Open Sans', sans-serif;
+      @apply text-base text-justify text-gray-700;
+    }
+
     @screen first {
       .page-left-padding {
         @apply pl-12;
