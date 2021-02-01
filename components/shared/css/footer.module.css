@@ -1,0 +1,33 @@
+.logoTitle {
+  max-width: 240px;
+}
+
+.emulated-flex-gap {
+  --gap: theme('spacing.2');
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+  width: calc(100% + var(--gap));
+}
+
+.emulated-flex-gap > * {
+  margin: var(--gap) 0 0 var(--gap);
+}
+
+.footerLogo {
+  flex: 1 0 auto;
+}
+
+.footerLinks {
+  flex: 1 0 auto;
+}
+
+.footerContact {
+  flex: 3 0 auto;
+}
+
+@screen second {
+  .footerLinks {
+    @apply grid grid-cols-2;
+    @apply w-auto;
+  }
+}
