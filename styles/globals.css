@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --grey-background: rgb(32, 32, 32);
+  }
+
   html,
   body {
     padding: 0;
@@ -30,6 +34,10 @@
 
     .page-padding {
       @apply px-4;
+    }
+
+    .grey-background {
+      background-color: var(--grey-background);
     }
 
     @screen first {
