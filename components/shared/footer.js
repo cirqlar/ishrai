@@ -10,7 +10,12 @@ export default function Footer({ className }) {
   };
 
   return (
-    <footer className={cn(className, "page-padding pt-4 pb-8 grey-background text-white second:flex second:pt-12 second:pb-16")}>
+    <footer
+      className={cn(
+        className,
+        "page-padding pt-4 pb-8 grey-background text-white second:flex second:pt-12 second:pb-16"
+      )}
+    >
       <div
         className={cn("flex flex-col items-center text-center second:items-start second:text-left", styles.footerLogo)}
       >
