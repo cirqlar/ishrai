@@ -1,0 +1,59 @@
+.logoImage {
+  height: 50px;
+}
+
+.link_item {
+  @apply border-t border-gray-300 py-2 block;
+}
+
+.link_item_first {
+  @apply border-t-0;
+}
+
+@screen first {
+  .link_item:not(.submenu_link) {
+    @apply border-0 p-0;
+    @apply inline-block;
+  }
+
+  .link_item:not(.submenu_link),
+  .nav_item {
+    @apply mr-6;
+    @apply text-sm;
+  }
+
+  nav > .link_item:not(.submenu_link):last-child {
+    @apply m-0;
+  }
+
+  .dropdown {
+    top: 120%;
+    @apply px-3 py-3;
+    @apply bg-white border border-gray-300 rounded;
+    @apply text-sm;
+    @apply w-32 shadow-lg;
+  }
+
+  .link_item.submenu_link {
+    @apply border-0;
+  }
+}
+
+@screen second {
+  nav > .link_item:not(.submenu_link):last-child {
+    @apply mr-4;
+  }
+
+  .expandedDropdown {
+    @apply p-0;
+    @apply bg-transparent border-0 rounded-none;
+    @apply w-auto shadow-none;
+  }
+
+  .expandedDropdown .submenu_link {
+    top: 0;
+    @apply border-0 p-0;
+    @apply inline-block;
+    @apply mr-6;
+  }
+}

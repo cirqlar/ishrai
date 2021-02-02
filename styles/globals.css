@@ -2,19 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@layer base {
+  :root {
+    --grey-background: rgb(32, 32, 32);
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+  }
 
-* {
-  box-sizing: border-box;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  @responsive {
+    .page-left-padding {
+      @apply pl-4;
+    }
+
+    .page-right-padding {
+      @apply pr-4;
+    }
+
+    .page-padding {
+      @apply px-4;
+    }
+
+    .grey-background {
+      background-color: var(--grey-background);
+    }
+
+    .body-text {
+      font-family: 'Open Sans', sans-serif;
+      @apply text-base text-justify text-gray-700;
+    }
+
+    @screen first {
+      .page-left-padding {
+        @apply pl-12;
+      }
+  
+      .page-right-padding {
+        @apply pr-12;
+      }
+  
+      .page-padding {
+        @apply px-12;
+      }
+    }
+
+    @screen third {
+      .page-left-padding {
+        @apply pl-24;
+      }
+  
+      .page-right-padding {
+        @apply pr-24;
+      }
+  
+      .page-padding {
+        @apply px-24;
+      }
+    }
+  }
 }
