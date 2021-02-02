@@ -59,10 +59,18 @@ export default function Home() {
       <div className="page-padding py-12 text-center flex flex-col items-center">
         <h3 className="font-bold italic text-3xl first:text-4xl">Our Partners</h3>
         <div className="pt-6 flex flex-wrap justify-center items-start">
-          <img className=" max-h-48 pb-4 pr-4" src="/partners/heartland_alliance.png" alt="Heartland Alliance" />
-          <img className=" max-h-48 pb-4 pr-4" src="/partners/ISDAO.png" alt="ISDAO" />
-          <img className=" max-h-48 pb-4 pr-4" src="/partners/FrontlineAIDS.png" alt="Frontline AIDS" />
-          <img className=" max-h-48 pb-4 pr-4" src="/partners/viiv.png" alt="VIIV" />
+          <a href="https://www.heartlandalliance.org/heartland-alliance-international/" target="_blank">
+            <img className=" max-h-32 pb-4 pr-4" src="/partners/heartland_alliance.png" alt="Heartland Alliance" />
+          </a>
+          <a href="https://www.isdao.org/home/" target="_blank">
+            <img className=" max-h-32 pb-4 pr-4" src="/partners/ISDAO.png" alt="ISDAO" />
+          </a>
+          <a href="https://frontlineaids.org/" target="_blank">
+            <img className=" max-h-32 pb-4 pr-4" src="/partners/FrontlineAIDS.png" alt="Frontline AIDS" />
+          </a>
+          <a href="https://viivhealthcare.com/en-gb/" target="_blank">
+            <img className=" max-h-32 pb-4 pr-4" src="/partners/viiv.png" alt="VIIV" />
+          </a>
         </div>
       </div>
     </>
