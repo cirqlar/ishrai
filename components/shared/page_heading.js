@@ -5,6 +5,7 @@ export default function PageHeading({ heading }) {
     <div className="h-20 relative">
       <Image
         src="/bgs/bg-1.png"
+        alt="Hands raised"
         layout="fill"
         objectFit="cover"
         objectPosition="center"

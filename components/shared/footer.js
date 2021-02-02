@@ -61,13 +61,13 @@ export default function Footer({ className }) {
         <p className="font-bold pt-2 text-sm">5 Abiola Fagbola Close, Lagos, Nigeria</p>
         <p className="font-bold pt-2 text-sm"><a href="mailto:ishraing@gmail.com">ishraing@gmail.com</a></p>
         <div className="flex justify-center pt-4">
-          <a href="https://www.facebook.com/ishrai.nigeria.7" target="_blank">
+          <a aria-label="Facebook" href="https://www.facebook.com/ishrai.nigeria.7" target="_blank">
             <FaFacebookSquare {...socialIconProperties} className="mr-2" />
           </a>
-          <a href="https://www.instagram.com/ishrai_n/" target="_blank">
+          <a aria-label="Instagram" href="https://www.instagram.com/ishrai_n/" target="_blank">
             <FaInstagramSquare {...socialIconProperties} className="mr-2" />
           </a>
-          <a href="https://www.linkedin.com/company/ishraehq" target="_blank">
+          <a aria-label="LinkedIn" href="https://www.linkedin.com/company/ishraehq" target="_blank">
             <FaLinkedin {...socialIconProperties} />
           </a>
         </div>

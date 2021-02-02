@@ -10,6 +10,7 @@ export default function Home() {
       <div className="h-96 relative">
         <Image
           src="/bgs/bg-2.png"
+          alt="Hands raised"
           layout="fill"
           objectFit="cover"
           objectPosition="center"
