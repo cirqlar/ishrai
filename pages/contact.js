@@ -36,7 +36,7 @@ export default function Contact() {
             <FaLinkedin {...socialIconProperties} className="mr-2 inline-block" /> <span>ISHRAI</span>
           </a>
         </div>
-        <div className="mapouter max-w-lg rounded border border-gray-200 flex-shrink-0 flex-grow">
+        <div className="mapouter max-w-2xl rounded border border-gray-200 flex-shrink-0 flex-grow">
           <div className="gmap_canvas">
             <iframe
               height="300px"
