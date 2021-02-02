@@ -46,7 +46,7 @@ export default function Footer({ className }) {
         <Link href="/">
           <a className={cn("")}>Donations</a>
         </Link>
-        <Link href="/">
+        <Link href="/contact">
           <a className={cn("")}>Contact Us</a>
         </Link>
         <Link href="/">
@@ -59,9 +59,9 @@ export default function Footer({ className }) {
       <div className={cn("pt-4 flex flex-col justify-center text-center", styles.footerContact)}>
         <h1 className="font-bold italic text-2xl">Find us</h1>
         <p className="font-bold pt-2 text-sm">5 Abiola Fagbola Close, Lagos, Nigeria</p>
-        <p className="font-bold pt-2 text-sm">ishraing@gmail.com</p>
+        <p className="font-bold pt-2 text-sm"><a href="mailto:ishraing@gmail.com">ishraing@gmail.com</a></p>
         <div className="flex justify-center pt-4">
-          <a href="https://www.facebook.com/ishrai.nigeria.7">
+          <a href="https://www.facebook.com/ishrai.nigeria.7" target="_blank">
             <FaFacebookSquare {...socialIconProperties} className="mr-2" />
           </a>
           <a href="https://www.instagram.com/ishrai_n/" target="_blank">

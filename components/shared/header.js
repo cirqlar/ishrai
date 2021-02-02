@@ -88,7 +88,7 @@ export default function Header({ className }) {
               <Link href="/">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Donations</a>
               </Link>
-              <Link href="/">
+              <Link href="/contact">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Contact Us</a>
               </Link>
               <Link href="/">
@@ -101,7 +101,7 @@ export default function Header({ className }) {
           </div>
         </nav>
         <div className="flex justify-center pt-2 first:p-0 first:ml-4">
-          <a href="https://www.facebook.com/ishrai.nigeria.7">
+          <a href="https://www.facebook.com/ishrai.nigeria.7" target="_blank">
             <FaFacebookSquare {...socialIconProperties} className="mr-2" />
           </a>
           <a href="https://www.instagram.com/ishrai_n/" target="_blank">
