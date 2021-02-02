@@ -58,5 +58,19 @@
         @apply px-12;
       }
     }
+
+    @screen third {
+      .page-left-padding {
+        @apply pl-24;
+      }
+  
+      .page-right-padding {
+        @apply pr-24;
+      }
+  
+      .page-padding {
+        @apply px-24;
+      }
+    }
   }
 }
