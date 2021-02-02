@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
           property="og:description"
           content="A non-governmental non-profit based organisation which aims to create a society void of discrimination of all persons."
         />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="/logo/ishrai-white.jpg" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }) {
           property="twitter:description"
           content="A non-governmental non-profit based organisation which aims to create a society void of discrimination of all persons."
         />
-        <meta property="twitter:image" content=""></meta>
+        <meta property="twitter:image" content="/logo/ishrai-white.jpg"></meta>
       </Head>
       <MainLayout>
         <Component {...pageProps} />
