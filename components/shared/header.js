@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import cn from "classnames";
 import { MdMenu } from "react-icons/md";
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaCaretDown } from "react-icons/fa";
@@ -7,6 +8,7 @@ import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaCaretDown } from "re
 import styles from "./css/header.module.css";
 
 export default function Header({ className }) {
+  const router = useRouter();
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isWhoWeAreDropdownOpen, setIsWWADO] = useState(false);
   const [isMoreDropdownOpen, setIsMDO] = useState(false);
@@ -19,7 +21,7 @@ export default function Header({ className }) {
     [more, setIsMDO],
   ];
 
-  useEffect((_) => {
+  useEffect(() => {
     const closeDropdowns = ({ target }) => {
       for (const dropdown of dropdowns) {
         if (!dropdown[0].current.contains(target)) {
@@ -31,6 +33,12 @@ export default function Header({ className }) {
 
     return () => document.removeEventListener("click", closeDropdowns);
   }, []);
+
+  useEffect(() => {
+    setIsMobileNavOpen(false);
+    setIsMDO(false);
+    setIsWWADO(false);
+  }, [router.asPath])
 
   const socialIconProperties = {
     size: "20px",
