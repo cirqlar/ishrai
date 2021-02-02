@@ -31,28 +31,28 @@ export default function Footer({ className }) {
           styles.footerLinks
         )}
       >
-        <Link href="/">
+        <Link href="/under_construction">
           <a className={cn("")}>About Us</a>
         </Link>
-        <Link href="/">
+        <Link href="/under_construction">
           <a className={cn("")}>Our Partners</a>
         </Link>
-        <Link href="/">
+        <Link href="/under_construction">
           <a className={cn("")}>Meet The Staff</a>
         </Link>
-        <Link href="/">
+        <Link href="/under_construction">
           <a className={cn("")}>What we do</a>
         </Link>
-        <Link href="/">
+        <Link href="/under_construction">
           <a className={cn("")}>Donations</a>
         </Link>
         <Link href="/contact">
           <a className={cn("")}>Contact Us</a>
         </Link>
-        <Link href="/">
+        <Link href="/under_construction">
           <a className={cn("")}>Safehouse</a>
         </Link>
-        <Link href="/">
+        <Link href="/under_construction">
           <a className={cn("")}>News/Blog</a>
         </Link>
       </div>

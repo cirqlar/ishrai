@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import cn from "classnames";
 import { MdMenu } from "react-icons/md";
@@ -10,6 +10,27 @@ export default function Header({ className }) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isWhoWeAreDropdownOpen, setIsWWADO] = useState(false);
   const [isMoreDropdownOpen, setIsMDO] = useState(false);
+
+  const whoWeAre = useRef();
+  const more = useRef();
+
+  const dropdowns = [
+    [whoWeAre, setIsWWADO],
+    [more, setIsMDO],
+  ];
+
+  useEffect((_) => {
+    const closeDropdowns = ({ target }) => {
+      for (const dropdown of dropdowns) {
+        if (!dropdown[0].current.contains(target)) {
+          dropdown[1](false);
+        }
+      }
+    };
+    document.addEventListener("click", closeDropdowns);
+
+    return () => document.removeEventListener("click", closeDropdowns);
+  }, []);
 
   const socialIconProperties = {
     size: "20px",
@@ -37,7 +58,7 @@ export default function Header({ className }) {
           <Link href="/">
             <a className={cn(styles.link_item, styles.link_item_first)}>Home</a>
           </Link>
-          <div className="first:inline-block relative">
+          <div ref={whoWeAre} className="first:inline-block relative">
             <a
               href="#"
               className={cn("hidden first:inline-block", styles.nav_item)}
@@ -50,21 +71,21 @@ export default function Header({ className }) {
               <FaCaretDown className="inline-block" />
             </a>
             <div className={cn({ "first:hidden": !isWhoWeAreDropdownOpen }, "first:absolute", styles.dropdown)}>
-              <Link href="/">
+              <Link href="/under_construction">
                 <a className={cn(styles.link_item, styles.submenu_link)}>About Us</a>
               </Link>
-              <Link href="/">
+              <Link href="/under_construction">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Our Partners</a>
               </Link>
-              <Link href="/">
+              <Link href="/under_construction">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Meet The Staff</a>
               </Link>
-              <Link href="/">
+              <Link href="/under_construction">
                 <a className={cn(styles.link_item, styles.submenu_link)}>What we do</a>
               </Link>
             </div>
           </div>
-          <div className="first:inline-block relative">
+          <div ref={more} className="first:inline-block relative">
             <a
               href="#"
               className={cn("hidden first:inline-block second:hidden", styles.nav_item)}
@@ -78,23 +99,23 @@ export default function Header({ className }) {
             </a>
             <div
               className={cn(
-                { 'first:hidden': !isMoreDropdownOpen },
+                { "first:hidden": !isMoreDropdownOpen },
                 "first:absolute",
                 styles.dropdown,
                 "second:inline-block second:relative",
-                styles.expandedDropdown,
+                styles.expandedDropdown
               )}
             >
-              <Link href="/">
+              <Link href="/under_construction">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Donations</a>
               </Link>
               <Link href="/contact">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Contact Us</a>
               </Link>
-              <Link href="/">
+              <Link href="/under_construction">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Safehouse</a>
               </Link>
-              <Link href="/">
+              <Link href="/under_construction">
                 <a className={cn(styles.link_item, styles.submenu_link)}>News/Blog</a>
               </Link>
             </div>
