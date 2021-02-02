@@ -72,6 +72,9 @@ export default function Home() {
           <a href="https://viivhealthcare.com/en-gb/" target="_blank">
             <img className=" max-h-32 pb-4 pr-4" src="/partners/viiv.png" alt="VIIV" />
           </a>
+          <a href="https://apin.org.ng/" target="_blank">
+            <img className=" max-h-32 pb-4 pr-4" src="/partners/apin.png" alt="VIIV" />
+          </a>
         </div>
       </div>
     </>
