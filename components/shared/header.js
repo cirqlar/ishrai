@@ -70,7 +70,7 @@ export default function Header({ className }) {
               Who We Are
               <FaCaretDown className="inline-block" />
             </a>
-            <div className={cn({ "first:hidden": !isWhoWeAreDropdownOpen }, "first:absolute", styles.dropdown)}>
+            <div className={cn({ "first:hidden": !isWhoWeAreDropdownOpen }, "first:absolute z-50", styles.dropdown)}>
               <Link href="/under_construction">
                 <a className={cn(styles.link_item, styles.submenu_link)}>About Us</a>
               </Link>
@@ -100,7 +100,7 @@ export default function Header({ className }) {
             <div
               className={cn(
                 { "first:hidden": !isMoreDropdownOpen },
-                "first:absolute",
+                "first:absolute z-50",
                 styles.dropdown,
                 "second:inline-block second:relative",
                 styles.expandedDropdown
