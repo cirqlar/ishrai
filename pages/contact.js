@@ -15,12 +15,11 @@ export default function Contact() {
         If you want PREP, PEP, ARV, Testing or more information, reach out to us.
       </p>
       <div className="page-padding pt-8 first:flex first:justify-between mb-12">
-        <div className="flex flex-col flex-shrink first:mr-8 text-sm mb-8 first:mb-0">
-          <span>
-            <HiLocationMarker {...socialIconProperties} className="mr-2 inline-block" /> <span>5 Abiola Fagbola Close, Lagos, Nigeria</span>
-          </span>
+        {/* <div className="flex flex-col flex-shrink first:mr-8 text-sm mb-8 first:mb-0"> */}
+        <div className="flex flex-col text-sm mb-8 mx-auto">
           <span className="mt-2">
-            <HiMail {...socialIconProperties} className="mr-2 inline-block" /> <a href="mailto:ishraing@gmail.com">ishraing@gmail.com</a>
+            <HiMail {...socialIconProperties} className="mr-2 inline-block" />{" "}
+            <a href="mailto:ishrainigeria@gmail.com">ishrainigeria@gmail.com</a>
           </span>
           <span className="mt-2">
             <FaPhone {...socialIconProperties} className="mr-2 inline-block" /> <span>+2348156843504</span>
@@ -36,24 +35,26 @@ export default function Contact() {
             <FaLinkedin {...socialIconProperties} className="mr-2 inline-block" /> <span>ISHRAI</span>
           </a>
         </div>
-        <div className="mapouter max-w-2xl rounded border border-gray-200 flex-shrink-0 flex-grow">
-          <div className="gmap_canvas">
-            <iframe
-              height="300px"
-              width="100%"
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=5%20Abiola%20Fagbola&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameBorder="0"
-              scrolling="no"
-              marginHeight="0"
-              marginWidth="0"
-            ></iframe>
-            <a href="https://yt2.org"></a>
-            <br />
-            <style>{".mapouter{position:relative;text-align:right;height:320px;padding:10px;}"}</style>
-            <style>{".gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}"}</style>
+        {false && (
+          <div className="mapouter max-w-2xl rounded border border-gray-200 flex-shrink-0 flex-grow">
+            <div className="gmap_canvas">
+              <iframe
+                height="300px"
+                width="100%"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=5%20Abiola%20Fagbola&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameBorder="0"
+                scrolling="no"
+                marginHeight="0"
+                marginWidth="0"
+              ></iframe>
+              <a href="https://yt2.org"></a>
+              <br />
+              <style>{".mapouter{position:relative;text-align:right;height:320px;padding:10px;}"}</style>
+              <style>{".gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}"}</style>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </>
   );

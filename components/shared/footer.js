@@ -58,8 +58,9 @@ export default function Footer({ className }) {
       </div>
       <div className={cn("pt-4 flex flex-col justify-center text-center", styles.footerContact)}>
         <h1 className="font-bold italic text-2xl">Find us</h1>
-        <p className="font-bold pt-2 text-sm">5 Abiola Fagbola Close, Lagos, Nigeria</p>
-        <p className="font-bold pt-2 text-sm"><a href="mailto:ishraing@gmail.com">ishraing@gmail.com</a></p>
+        <p className="font-bold pt-2 text-sm">
+          <a href="mailto:ishrainigeria@gmail.com">ishrainigeria@gmail.com</a>
+        </p>
         <div className="flex justify-center pt-4">
           <a aria-label="Facebook" href="https://www.facebook.com/ishrai.nigeria.7" target="_blank">
             <FaFacebookSquare {...socialIconProperties} className="mr-2" />
