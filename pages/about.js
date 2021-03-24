@@ -1,10 +1,6 @@
 import PageHeading from "../components/shared/page_heading";
 
 export default function About() {
-  const socialIconProperties = {
-    size: "30px",
-  };
-
   return (
     <>
       <PageHeading heading="Who We Are" />
