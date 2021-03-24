@@ -61,6 +61,9 @@ export default function Home() {
           <HomeIcon className="mx-8 pb-4" icon={<FaBalanceScale size="45px" />} title="Human Rights" />
           <HomeIcon className="mx-8 pb-4" icon={<BiFemale size="45px" />} title="Women's Rights" />
         </div>
+        <Link href="/whatwedo">
+          <a className="link-button mt-5">Learn More</a>
+        </Link>
       </div>
       <div className="page-padding py-12 text-center flex flex-col items-center">
         <h3 className="font-bold italic text-3xl first:text-4xl">Our Partners</h3>
