@@ -24,3 +24,5 @@ fields:
       format: markdown
   label: A Little About Us
   description: Text in about us section on the home page
+pages:
+- page_data/index.md
