@@ -1,6 +1,7 @@
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaPhone } from "react-icons/fa";
 import { HiLocationMarker, HiMail } from "react-icons/hi";
 
+import PageTitle from "../components/layout/pageTitle";
 import PageHeading from "../components/shared/page_heading";
 
 export default function Contact() {
@@ -10,6 +11,7 @@ export default function Contact() {
 
   return (
     <>
+      <PageTitle title="Contact Us" />
       <PageHeading heading="Contact Us" />
       <p className="font-bold italic text-lg text-center page-padding pt-4">
         If you want PREP, PEP, ARV, Testing or more information, reach out to us.

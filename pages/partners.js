@@ -1,8 +1,10 @@
+import PageTitle from "../components/layout/pageTitle";
 import PageHeading from "../components/shared/page_heading";
 
 export default function Partners() {
   return (
     <>
+      <PageTitle title="Our Partners" />
       <PageHeading heading="Our Partners" />
       <div className="page-padding py-12 text-center flex flex-col items-center">
         <div className="pt-6 flex flex-wrap justify-center items-start">

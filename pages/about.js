@@ -1,8 +1,10 @@
+import PageTitle from "../components/layout/pageTitle";
 import PageHeading from "../components/shared/page_heading";
 
 export default function About() {
   return (
     <>
+      <PageTitle title="Who We Are" />
       <PageHeading heading="Who We Are" />
       <div className="page-padding py-12 text-center flex flex-col items-center">
         <h3 className="font-bold italic text-3xl first:text-4xl">About Us</h3>

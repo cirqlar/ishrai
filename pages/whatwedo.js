@@ -3,6 +3,7 @@ import { BiPlusMedical, BiFemale } from "react-icons/bi";
 import { FaTransgender, FaBalanceScale } from "react-icons/fa";
 
 import ExIcon from "../components/icon_containers/extended_icons";
+import PageTitle from "../components/layout/pageTitle";
 import PageHeading from "../components/shared/page_heading";
 
 export default function Contact() {
@@ -12,6 +13,7 @@ export default function Contact() {
 
   return (
     <>
+      <PageTitle title="What We Do" />
       <PageHeading heading="The Work we Do" />
       <div className="page-padding py-12 text-center flex flex-col items-center bg-gray-200">
         {/* <h3 className="font-bold italic text-3xl first:text-4xl">The Work We Do</h3> */}
