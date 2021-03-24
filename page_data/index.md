@@ -9,5 +9,6 @@ about_us: Improved Sexual Health and Rights Advocacy Initiative (ISHRAI) is a no
   community dialogue, safe-shelter, responding to and preventing cases of gender-based
   violence.
 banner_image: "/uploads/bg-2.png"
+banner_title: Promoting the wellbeing of all Nigerians
 
 ---
