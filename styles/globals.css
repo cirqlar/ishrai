@@ -45,6 +45,12 @@
       @apply text-base text-justify text-gray-700;
     }
 
+    .body-list {
+      font-family: 'Open Sans', sans-serif;
+      @apply text-sm text-left text-gray-700;
+      @apply list-disc list-inside pl-4 pr-2;
+    }
+
     @screen first {
       .page-left-padding {
         @apply pl-12;

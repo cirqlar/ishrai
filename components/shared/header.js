@@ -79,7 +79,7 @@ export default function Header({ className }) {
               <FaCaretDown className="inline-block" />
             </a>
             <div className={cn({ "first:hidden": !isWhoWeAreDropdownOpen }, "first:absolute z-50", styles.dropdown)}>
-              <Link href="/under_construction">
+              <Link href="/about">
                 <a className={cn(styles.link_item, styles.submenu_link)}>About Us</a>
               </Link>
               <Link href="/under_construction">

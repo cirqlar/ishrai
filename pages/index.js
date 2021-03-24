@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BiPlusMedical } from "react-icons/bi";
+import { BiPlusMedical, BiFemale } from "react-icons/bi";
 import { FaTransgender, FaBalanceScale } from "react-icons/fa";
 
 import HomeIcon from "../components/icon_containers/home_icons";
@@ -55,6 +55,7 @@ export default function Home() {
           />
           <HomeIcon className="mx-8 pb-4" icon={<FaTransgender size="42px" />} title="Gender Based Violence" />
           <HomeIcon className="mx-8 pb-4" icon={<FaBalanceScale size="45px" />} title="Human Rights" />
+          <HomeIcon className="mx-8 pb-4" icon={<BiFemale size="45px" />} title="Women's Rights" />
         </div>
       </div>
       <div className="page-padding py-12 text-center flex flex-col items-center">

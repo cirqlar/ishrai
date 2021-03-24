@@ -31,7 +31,7 @@ export default function Footer({ className }) {
           styles.footerLinks
         )}
       >
-        <Link href="/under_construction">
+        <Link href="/about">
           <a className={cn("")}>About Us</a>
         </Link>
         <Link href="/under_construction">
