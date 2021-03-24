@@ -136,7 +136,7 @@ export default function Header({ className }) {
           <a href="https://www.instagram.com/ishrai_n/" target="_blank">
             <FaInstagramSquare {...socialIconProperties} className="mr-2" />
           </a>
-          <a href="https://www.linkedin.com/company/ishraehq" target="_blank">
+          <a href="https://www.linkedin.com/company/ishrai/" target="_blank">
             <FaLinkedin {...socialIconProperties} />
           </a>
         </div>

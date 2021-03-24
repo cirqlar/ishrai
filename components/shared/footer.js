@@ -68,7 +68,7 @@ export default function Footer({ className }) {
           <a aria-label="Instagram" href="https://www.instagram.com/ishrai_n/" target="_blank">
             <FaInstagramSquare {...socialIconProperties} className="mr-2" />
           </a>
-          <a aria-label="LinkedIn" href="https://www.linkedin.com/company/ishraehq" target="_blank">
+          <a aria-label="LinkedIn" href="https://www.linkedin.com/company/ishrai/" target="_blank">
             <FaLinkedin {...socialIconProperties} />
           </a>
         </div>
