@@ -1,4 +1,36 @@
 ---
 label: Blog Post
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Title of the post/article
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+  description: Name of the Author of the post
+- name: created
+  type: datetime
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+  label: Created
+  description: The time the post was first created
+  hidden: true
+- name: last_modified
+  type: datetime
+  description: The last time a modification was made to the file
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: Last Modified
