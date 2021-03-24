@@ -2,11 +2,11 @@
 label: Home Page
 hide_body: true
 fields:
-- name: banner_tittle
+- name: banner_title
   type: text
   config:
     required: false
-  label: Banner Tittle
+  label: Banner Title
   description: Title displayed on the home page banner
 - name: banner_subtitle
   type: text
