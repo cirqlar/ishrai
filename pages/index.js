@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BiPlusMedical, BiFemale } from "react-icons/bi";
 import { FaTransgender, FaBalanceScale } from "react-icons/fa";
 
@@ -33,6 +34,9 @@ export default function Home() {
           gender identity, orientation, religious affiliation, race or ethnicity. This we through economic empowerment,
           education, community dialogue, safe-shelter, responding to and preventing cases of gender based violence.
         </p>
+        <Link href="/about">
+          <a className="link-button mt-5">Learn More</a>
+        </Link>
       </div>
       <div className="page-padding py-12 text-center flex flex-col items-center bg-gray-200">
         <h3 className="font-bold italic text-3xl first:text-4xl">The Work We Do</h3>
