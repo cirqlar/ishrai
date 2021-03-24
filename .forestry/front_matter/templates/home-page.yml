@@ -1,4 +1,26 @@
 ---
 label: Home Page
 hide_body: true
-fields: []
+fields:
+- name: banner_tittle
+  type: text
+  config:
+    required: false
+  label: Banner Tittle
+  description: Title displayed on the home page banner
+- name: banner_subtitle
+  type: text
+  config:
+    required: false
+  label: Banner Subtitle
+  description: Subtitle displayed on the home page banner
+- name: about_us
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: A Little About Us
+  description: Text in about us section on the home page
