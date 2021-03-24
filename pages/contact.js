@@ -33,7 +33,7 @@ export default function Contact() {
           <a href="https://www.instagram.com/ishrai_n/" target="_blank" className="mt-2">
             <FaInstagramSquare {...socialIconProperties} className="mr-2 inline-block" /> <span>@ishrai_n</span>
           </a>
-          <a href="https://www.linkedin.com/company/ishraehq" target="_blank" className="mt-2">
+          <a href="https://www.linkedin.com/company/ishrai/" target="_blank" className="mt-2">
             <FaLinkedin {...socialIconProperties} className="mr-2 inline-block" /> <span>ISHRAI</span>
           </a>
         </div>
