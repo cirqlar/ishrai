@@ -14,11 +14,9 @@ sections:
 - type: document
   path: page_data/index.md
   label: Home Page
-  match: "**/*"
 - type: document
   path: page_data/about.md
   label: About ISHRAI
-  match: "**/*"
 upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''
