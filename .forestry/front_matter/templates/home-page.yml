@@ -14,6 +14,12 @@ fields:
     required: false
   label: Banner Subtitle
   description: Subtitle displayed on the home page banner
+- name: banner_image
+  type: file
+  config:
+    maxSize: 64
+  label: Banner Image
+  description: Image shown in banner on the home page
 - name: about_us
   type: textarea
   default: ''
