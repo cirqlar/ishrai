@@ -9,4 +9,6 @@ about_us: Improved Sexual Health and Rights Advocacy Initiative (ISHRAI) is a no
   affiliation, race or ethnicity. This we through economic empowerment, education,
   community dialogue, safe-shelter, responding to and preventing cases of gender-based
   violence.
+banner_image_alt: Hands Raised
+
 ---
