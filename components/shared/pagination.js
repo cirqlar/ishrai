@@ -1,5 +1,7 @@
 import cn from "classnames";
 import Link from "next/link";
+import React from "react";
+import { BiChevronsLeft, BiChevronsRight } from "react-icons/bi";
 
 import range from "../../utils/range";
 
@@ -43,9 +45,25 @@ export default function LinkPagination({ currentPage, numPages, baseLink }) {
         {pages.map((val) => {
           if (val == LEFT_ELLIPSES || val == RIGHT_ELLIPSES)
             return (
-              <li key={val}>
-                <Ellipses />
-              </li>
+              <React.Fragment key={val}>
+                {val == LEFT_ELLIPSES && (
+                  <li>
+                    <Link href={baseLink + "1"}>
+                      <a className={styles.pagination_item}><BiChevronsLeft /></a>
+                    </Link>
+                  </li>
+                )}
+                <li>
+                  <Ellipses />
+                </li>
+                {val == RIGHT_ELLIPSES && (
+                  <li>
+                    <Link href={baseLink + numPages}>
+                      <a className={styles.pagination_item}><BiChevronsRight /></a>
+                    </Link>
+                  </li>
+                )}
+              </React.Fragment>
             );
 
           return val === currentPage ? (

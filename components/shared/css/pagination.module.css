@@ -17,6 +17,14 @@
   @apply flex items-center;
 }
 
+.pagination_list li {
+  margin-right: 8px;
+}
+
+.pagination_list li:last-child {
+  margin-right: 0px;
+}
+
 .pagination_item {
   width: 24px;
   height: 24px;

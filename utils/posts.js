@@ -1,4 +1,5 @@
 import matter from "gray-matter";
+import RemoveMarkdown from "remove-markdown";
 
 // config
 const postsPerPage = 1;
@@ -9,6 +10,23 @@ let orderedPosts = null;
 let postCount = null;
 let numPages = null;
 
+function getExcerpt(originalString, length = 120) {
+  let trimmedString = originalString;
+
+  if (originalString.length > length) {
+    //trim the string to the maximum length
+    trimmedString = originalString.substr(0, length);
+
+    let lastSpace = trimmedString.lastIndexOf(" ");
+    if (lastSpace < 1) lastSpace = trimmedString.length;
+
+    //re-trim if we are in the middle of a word and
+    trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, lastSpace));
+  }
+  
+  return trimmedString;
+}
+
 export async function getInitialPosts() {
   const context = require.context("../posts", false, /\.md$/);
 
@@ -17,11 +35,11 @@ export async function getInitialPosts() {
   for (const key of context.keys()) {
     const post = key.slice(2);
     const content = await import(`../posts/${post}`);
-    const meta = matter(content.default + "\n", { excerpt: true, excerpt_separator: "\n" });
+    const meta = matter(content.default);
 
     posts.push({
       ...meta.data,
-      excerpt: meta.excerpt,
+      excerpt: RemoveMarkdown(getExcerpt(meta.content)),
       path: post.replace(".md", ""),
     });
   }
