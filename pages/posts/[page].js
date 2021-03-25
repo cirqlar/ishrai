@@ -1,18 +1,29 @@
 import PageHeading from "../../components/shared/page_heading";
-import { getNumPages, getPostCount } from "../../utils/posts";
+import LinkPagination from "../../components/shared/pagination";
+import { getNumPages, getPage, getPostCount, } from "../../utils/posts";
 
-export default function Posts() {
+export default function Posts({ currentPage, pageCount }) {
   return (
     <>
       <PageHeading heading="News/Blog" />
       <h3 className="font-bold italic text-3xl first:text-4xl">Posts</h3>
+      <LinkPagination currentPage={currentPage} numPages={pageCount} baseLink="/posts/" />
     </>
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ params }) {
+  const posts = await getPage(params.page);
+
+  console.log(posts);
+
   return {
-    props: {},
+    props: {
+      posts,
+      postCount: await getPostCount(),
+      pageCount: await getNumPages(),
+      currentPage: parseInt(params.page),
+    },
   };
 }
 

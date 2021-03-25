@@ -17,11 +17,12 @@ export async function getInitialPosts() {
   for (const key of context.keys()) {
     const post = key.slice(2);
     const content = await import(`../posts/${post}`);
-    const meta = matter(content.default, { excerpt: true });
+    const meta = matter(content.default + "\n", { excerpt: true, excerpt_separator: "\n" });
 
     posts.push({
       ...meta.data,
       excerpt: meta.excerpt,
+      path: post.replace(".md", ""),
     });
   }
 
@@ -33,7 +34,8 @@ export async function getInitialPosts() {
 export async function getPostCount() {
   if (!unorderedPosts) {
     await getInitialPosts();
-  } else if (!postCount) {
+  }
+  if (!postCount) {
     postCount = unorderedPosts.length;
   }
 
@@ -43,7 +45,8 @@ export async function getPostCount() {
 export async function getNumPages() {
   if (!postCount) {
     await getPostCount();
-  } else if (!numPages) {
+  }
+  if (!numPages) {
     numPages = Math.ceil(postCount / postsPerPage);
   }
 
@@ -57,8 +60,26 @@ export async function getSortedPosts() {
   if (!orderedPosts) {
     orderedPosts = [...unorderedPosts]
       .sort((a, b) => b.last_modified - a.last_modified)
-      .map((val) => ({ ...val, created: val.created.toString(), last_modified: val.last_modified.toString() }));
+      .map((val) => ({ ...val, created: val.created.toJSON(), last_modified: val.last_modified.toJSON() }));
   }
 
   return orderedPosts;
+}
+
+export async function getPage(page_number) {
+  if (!orderedPosts) {
+    await getSortedPosts();
+  }
+  if (!numPages) {
+    await getNumPages();
+  }
+
+  if (page_number <= 0 || page_number > numPages) {
+    throw Error("Invalid Page Number");
+  }
+
+  const startIndex = (page_number - 1) * postsPerPage;
+  const endIndex = startIndex + postsPerPage;
+
+  return orderedPosts.slice(startIndex, endIndex);
 }
