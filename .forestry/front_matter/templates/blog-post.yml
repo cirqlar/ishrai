@@ -36,4 +36,5 @@ fields:
     display_utc: false
   label: Last Modified
 pages:
+- posts/another-article.md
 - posts/this-is-an-article.md
