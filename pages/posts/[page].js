@@ -1,6 +1,5 @@
 import PageHeading from "../../components/shared/page_heading";
-
-import { num_pages } from "../../utils/posts";
+import { getNumPages, getPostCount } from "../../utils/posts";
 
 export default function Posts() {
   return (
@@ -18,7 +17,9 @@ export async function getStaticProps() {
 }
 
 export async function getStaticPaths() {
-  const paths = Array.from({ length: num_pages }).map((_, index) => ({ params: { page: (index + 1).toString() } }));
+  const paths = Array.from({ length: await getNumPages() }).map((_, index) => ({
+    params: { page: (index + 1).toString() },
+  }));
 
   return { paths, fallback: false };
 }
