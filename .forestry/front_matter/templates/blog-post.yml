@@ -37,5 +37,6 @@ fields:
   label: Last Modified
 pages:
 - posts/another-article.md
+- posts/i-have-five-these-now.md
 - posts/this-is-an-article.md
 - posts/we-three-few.md
