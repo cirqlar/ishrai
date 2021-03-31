@@ -3,7 +3,6 @@ import StyledMarkdown from "../../components/markdown/styledMarkdown";
 import { getPostData, getSortedPosts } from "../../utils/posts";
 
 export default function Post({ post, previous, next }) {
-  console.log(post);
   return (
     <>
       <div className="page-padding py-12 text-center flex flex-col items-center">
