@@ -1,13 +1,25 @@
+import Link from "next/link";
 import StyledMarkdown from "../../components/markdown/styledMarkdown";
 import { getPostData, getSortedPosts } from "../../utils/posts";
 
-export default function Post({ post }) {
+export default function Post({ post, previous, next }) {
   console.log(post);
   return (
     <>
       <div className="page-padding py-12 text-center flex flex-col items-center">
         <h1 className="font-bold text-4xl first:text-5xl">{post.title}</h1>
         <StyledMarkdown children={post.content} />
+
+        {previous && (
+          <Link href={`/post/${previous.path}`}>
+            <a>{previous.title}</a>
+          </Link>
+        )}
+        {next && (
+          <Link href={`/post/${next.path}`}>
+            <a>{next.title}</a>
+          </Link>
+        )}
       </div>
     </>
   );
