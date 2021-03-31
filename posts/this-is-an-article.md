@@ -9,7 +9,7 @@ Improved Sexual Health and Rights Advocacy Initiative (ISHRAI) was founded in, 2
 
 We are a non-profit, non-governmental, community-based organization here in Lagos State, Nigeria. Among other things, to advocate for an enabling environment at the community, state and national levels that ensure the functionality of all persons irrespective of age, linguistic or religious affiliation, colour, national or ethnic origin, functional disability, sexual orientation, gender identity/expression, marital status or any other circumstance affecting the private person.
 
-![Something else](file:///C:/Users/ibito/Pictures/andre-furtado-vuhqtUqSVtE-unsplash.jpg "Open")
+![Picture lol](/uploads/andre-furtado-vuhqtuqsvte-unsplash.jpg "We live in a twilight world")
 
 Lesbian Gay and Bisexual Persons are forced to deal with the effects of discriminatory legislation which criminalizes their behaviour. These laws and the resulting fear of discrimination, violence, and arrests further prevent them from accessing health services.
 
