@@ -23,7 +23,7 @@ function getExcerpt(originalString, length = 120) {
     //re-trim if we are in the middle of a word and
     trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, lastSpace));
   }
-  
+
   return trimmedString;
 }
 
@@ -39,6 +39,7 @@ export async function getInitialPosts() {
 
     posts.push({
       ...meta.data,
+      content: meta.content,
       excerpt: RemoveMarkdown(getExcerpt(meta.content)),
       path: post.replace(".md", ""),
     });
@@ -100,4 +101,18 @@ export async function getPage(page_number) {
   const endIndex = startIndex + postsPerPage;
 
   return orderedPosts.slice(startIndex, endIndex);
+}
+
+export async function getPostData(slug) {
+  if (!orderedPosts) {
+    await getSortedPosts();
+  }
+
+  let postIndex = orderedPosts.findIndex((post) => post.path === slug);
+
+  return {
+    previous: postIndex > 0 && orderedPosts[postIndex - 1],
+    post: orderedPosts[postIndex],
+    next: postIndex < orderedPosts.length - 1 && orderedPosts[postIndex + 1],
+  };
 }

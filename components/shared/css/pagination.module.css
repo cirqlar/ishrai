@@ -26,8 +26,8 @@
 }
 
 .pagination_item {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   border-radius: 3px;
   @apply bg-white border border-green-500;
   @apply flex items-center justify-center text-green-500 text-sm font-bold;
