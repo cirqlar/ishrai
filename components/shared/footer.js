@@ -52,7 +52,7 @@ export default function Footer({ className }) {
         <Link href="/under_construction">
           <a className={cn("")}>Safehouse</a>
         </Link>
-        <Link href="/under_construction">
+        <Link href="/posts">
           <a className={cn("")}>News/Blog</a>
         </Link>
       </div>

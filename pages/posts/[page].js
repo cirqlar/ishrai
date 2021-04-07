@@ -25,8 +25,6 @@ export default function Posts({ currentPage, pageCount, posts }) {
 export async function getStaticProps({ params }) {
   const posts = await getPage(params.page);
 
-  console.log(posts);
-
   return {
     props: {
       posts,
