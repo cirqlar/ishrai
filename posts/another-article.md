@@ -1,8 +1,8 @@
 ---
-created: 2021-03-25T10:34:10Z
+created: 2021-03-02T10:34:10Z
 title: Another Article
 author: Other Person
-last_modified: 2021-03-02T11:59:00Z
+last_modified: 2021-03-02T11:59:00.000+00:00
 
 ---
 Improved Sexual Health and Rights Advocacy Initiative (ISHRAI) was founded in, 2014 and formally registered with the Corporate Affairs Commission on the 13th day of January 2017 with registration number: CAC/IT/NO.93952. ISHRAI was registered to promote the health and rights of marginalized groups in Nigeria through advocacy, active participation, service delivery and innovative engagement processes. Among other things, to advocate for an enabling environment at the community, state and national levels that ensure the functionality of all persons irrespective of age, linguistic or religious affiliation, colour, national or ethnic origin, functional disability, sexual orientation, gender identity/expression, marital status or any other circumstance affecting the private person.
