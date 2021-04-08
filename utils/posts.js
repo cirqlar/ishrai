@@ -78,7 +78,7 @@ export async function getSortedPosts() {
   }
   if (!orderedPosts) {
     orderedPosts = [...unorderedPosts]
-      .sort((a, b) => b.last_modified - a.last_modified)
+      .sort((a, b) => b.created - a.created)
       .map((val) => ({ ...val, created: val.created.toJSON(), last_modified: val.last_modified.toJSON() }));
   }
 
