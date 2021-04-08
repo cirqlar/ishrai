@@ -25,7 +25,7 @@ fields:
   default: now
   label: Created
   description: The time the post was first created
-  hidden: true
+  hidden: false
 - name: last_modified
   type: datetime
   description: The last time a modification was made to the file
