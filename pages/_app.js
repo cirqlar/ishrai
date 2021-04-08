@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="title" content="ISHRAI" />
         <meta
           name="description"
-          content="A non-governmental non-profit based organisation which aims to create a society void of discrimination of all persons."
+          content="ISHRAI is non-governmental non-profit based organisation which aims to create a society void of discrimination of all persons."
         />
 
         {/* <!-- Open Graph / Facebook --> */}

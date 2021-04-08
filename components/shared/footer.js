@@ -31,16 +31,16 @@ export default function Footer({ className }) {
           styles.footerLinks
         )}
       >
-        <Link href="/under_construction">
+        <Link href="/about">
           <a className={cn("")}>About Us</a>
         </Link>
-        <Link href="/under_construction">
+        <Link href="/partners">
           <a className={cn("")}>Our Partners</a>
         </Link>
         <Link href="/under_construction">
           <a className={cn("")}>Meet The Staff</a>
         </Link>
-        <Link href="/under_construction">
+        <Link href="/whatwedo">
           <a className={cn("")}>What we do</a>
         </Link>
         <Link href="/under_construction">
@@ -52,14 +52,15 @@ export default function Footer({ className }) {
         <Link href="/under_construction">
           <a className={cn("")}>Safehouse</a>
         </Link>
-        <Link href="/under_construction">
+        <Link href="/posts">
           <a className={cn("")}>News/Blog</a>
         </Link>
       </div>
       <div className={cn("pt-4 flex flex-col justify-center text-center", styles.footerContact)}>
         <h1 className="font-bold italic text-2xl">Find us</h1>
-        <p className="font-bold pt-2 text-sm">5 Abiola Fagbola Close, Lagos, Nigeria</p>
-        <p className="font-bold pt-2 text-sm"><a href="mailto:ishraing@gmail.com">ishraing@gmail.com</a></p>
+        <p className="font-bold pt-2 text-sm">
+          <a href="mailto:ishrainigeria@gmail.com">ishrainigeria@gmail.com</a>
+        </p>
         <div className="flex justify-center pt-4">
           <a aria-label="Facebook" href="https://www.facebook.com/ishrai.nigeria.7" target="_blank">
             <FaFacebookSquare {...socialIconProperties} className="mr-2" />
@@ -67,7 +68,7 @@ export default function Footer({ className }) {
           <a aria-label="Instagram" href="https://www.instagram.com/ishrai_n/" target="_blank">
             <FaInstagramSquare {...socialIconProperties} className="mr-2" />
           </a>
-          <a aria-label="LinkedIn" href="https://www.linkedin.com/company/ishraehq" target="_blank">
+          <a aria-label="LinkedIn" href="https://www.linkedin.com/company/ishrai/" target="_blank">
             <FaLinkedin {...socialIconProperties} />
           </a>
         </div>

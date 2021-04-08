@@ -1,0 +1,40 @@
+---
+label: Home Page
+hide_body: true
+fields:
+- name: banner_title
+  type: text
+  config:
+    required: false
+  label: Banner Title
+  description: Title displayed on the home page banner
+- name: banner_subtitle
+  type: text
+  config:
+    required: false
+  label: Banner Subtitle
+  description: Subtitle displayed on the home page banner
+- name: banner_image
+  type: file
+  config:
+    maxSize: 64
+  label: Banner Image
+  description: Image shown in banner on the home page
+- name: banner_image_alt
+  type: text
+  config:
+    required: false
+  label: Banner Image Alt
+  description: A description of the banner image provided
+- name: about_us
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: A Little About Us
+  description: Text in about us section on the home page
+pages:
+- page_data/index.md

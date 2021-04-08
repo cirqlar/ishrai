@@ -79,16 +79,16 @@ export default function Header({ className }) {
               <FaCaretDown className="inline-block" />
             </a>
             <div className={cn({ "first:hidden": !isWhoWeAreDropdownOpen }, "first:absolute z-50", styles.dropdown)}>
-              <Link href="/under_construction">
+              <Link href="/about">
                 <a className={cn(styles.link_item, styles.submenu_link)}>About Us</a>
               </Link>
-              <Link href="/under_construction">
+              <Link href="/partners">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Our Partners</a>
               </Link>
               <Link href="/under_construction">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Meet The Staff</a>
               </Link>
-              <Link href="/under_construction">
+              <Link href="/whatwedo">
                 <a className={cn(styles.link_item, styles.submenu_link)}>What we do</a>
               </Link>
             </div>
@@ -123,7 +123,7 @@ export default function Header({ className }) {
               <Link href="/under_construction">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Safehouse</a>
               </Link>
-              <Link href="/under_construction">
+              <Link href="/posts">
                 <a className={cn(styles.link_item, styles.submenu_link)}>News/Blog</a>
               </Link>
             </div>
@@ -136,7 +136,7 @@ export default function Header({ className }) {
           <a href="https://www.instagram.com/ishrai_n/" target="_blank">
             <FaInstagramSquare {...socialIconProperties} className="mr-2" />
           </a>
-          <a href="https://www.linkedin.com/company/ishraehq" target="_blank">
+          <a href="https://www.linkedin.com/company/ishrai/" target="_blank">
             <FaLinkedin {...socialIconProperties} />
           </a>
         </div>

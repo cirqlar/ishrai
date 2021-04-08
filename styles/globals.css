@@ -45,6 +45,21 @@
       @apply text-base text-justify text-gray-700;
     }
 
+    .body-list {
+      font-family: 'Open Sans', sans-serif;
+      @apply text-sm text-left text-gray-700;
+      @apply list-disc list-inside pl-4 pr-2;
+    }
+
+    .link-button {
+      @apply px-4 py-2 block bg-green-500 rounded text-white;
+      @apply transition-all duration-150;
+    }
+
+    .link-button:hover, .link-button:focus {
+      @apply bg-green-600 shadow-lg;
+    }
+
     @screen first {
       .page-left-padding {
         @apply pl-12;
