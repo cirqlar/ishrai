@@ -9,12 +9,6 @@ fields:
     required: false
   label: Title
   description: Title of the post/article
-- name: author
-  type: text
-  config:
-    required: false
-  label: Author
-  description: Name of the Author of the post
 - name: created
   type: datetime
   config:
