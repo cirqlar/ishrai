@@ -1,0 +1,37 @@
+---
+label: Post/Article
+hide_body: false
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Title of the post/article
+- name: created
+  type: datetime
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+  label: Created
+  description: The time the post was first created
+  hidden: false
+- name: last_modified
+  type: datetime
+  description: The last time a modification was made to the file
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: Last Modified
+pages:
+- posts/another-article.md
+- posts/i-have-five-these-now.md
+- posts/my-open-heaven.md
+- posts/this-is-an-article.md
+- posts/we-three-few.md

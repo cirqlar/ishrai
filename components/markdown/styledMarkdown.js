@@ -5,7 +5,7 @@ export default function StyledMarkdown({ renderers, ...props }) {
     heading: ({ children, level }) => {
       switch (level) {
         case 1:
-          return <h1>{children}</h1>;
+          return <h1 className="font-bold text-4xl first:text-5xl">{children}</h1>;
         case 2:
           return <h2>{children}</h2>;
         case 3:
@@ -19,7 +19,7 @@ export default function StyledMarkdown({ renderers, ...props }) {
       }
     },
     paragraph: ({ children }) => {
-      return <p className="body-text pt-5 max-w-3xl">{children}</p>;
+      return <p className="body-text pt-5 w-full max-w-3xl">{children}</p>;
     },
     list: ({ children, ordered }) => {
       return ordered ? (

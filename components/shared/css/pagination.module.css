@@ -1,0 +1,42 @@
+.ellipses_container {
+  @apply flex;
+}
+
+.ellipses {
+  width: 6px;
+  height: 6px;
+  border-radius: 1px;
+  @apply bg-gray-400;
+}
+
+.ellipses:not(:last-child) {
+  margin-right: 2px;
+}
+
+.pagination_list {
+  @apply flex items-center;
+}
+
+.pagination_list li {
+  margin-right: 8px;
+}
+
+.pagination_list li:last-child {
+  margin-right: 0px;
+}
+
+.pagination_item {
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+  @apply bg-white border border-green-500;
+  @apply flex items-center justify-center text-green-500 text-sm font-bold;
+}
+
+a.pagination_item {
+  cursor: pointer;
+}
+
+.pagination_item.active, a.pagination_item:hover, a.pagination_item:focus {
+  @apply bg-green-500 text-white;
+}
