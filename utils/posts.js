@@ -2,7 +2,7 @@ import matter from "gray-matter";
 import RemoveMarkdown from "remove-markdown";
 
 // config
-const postsPerPage = 1;
+const postsPerPage = 10;
 
 // variables
 let unorderedPosts = null;
@@ -10,7 +10,7 @@ let orderedPosts = null;
 let postCount = null;
 let numPages = null;
 
-function getExcerpt(originalString, length = 120) {
+function getExcerpt(originalString, length = 280) {
   let trimmedString = originalString;
 
   if (originalString.length > length) {

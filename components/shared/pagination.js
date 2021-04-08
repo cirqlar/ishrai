@@ -17,7 +17,7 @@ function Ellipses() {
   );
 }
 
-export default function LinkPagination({ currentPage, numPages, baseLink }) {
+export default function LinkPagination({ currentPage, numPages, baseLink, ...props }) {
   const neighbors = 1;
   const LEFT_ELLIPSES = "LEFT_PAGE";
   const RIGHT_ELLIPSES = "RIGHT_PAGE";
@@ -40,7 +40,7 @@ export default function LinkPagination({ currentPage, numPages, baseLink }) {
   }
 
   return (
-    <div>
+    <div {...props}>
       <ul className={styles.pagination_list}>
         {pages.map((val) => {
           if (val == LEFT_ELLIPSES || val == RIGHT_ELLIPSES)
