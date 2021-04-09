@@ -19,6 +19,9 @@ sections:
 - type: document
   path: page_data/about.md
   label: About ISHRAI
+- type: document
+  path: page_data/team.md
+  label: The Team
 upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''

@@ -37,8 +37,8 @@ export default function Footer({ className }) {
         <Link href="/partners">
           <a className={cn("")}>Our Partners</a>
         </Link>
-        <Link href="/under_construction">
-          <a className={cn("")}>Meet The Staff</a>
+        <Link href="/team">
+          <a className={cn("")}>Meet The Team</a>
         </Link>
         <Link href="/whatwedo">
           <a className={cn("")}>What we do</a>
