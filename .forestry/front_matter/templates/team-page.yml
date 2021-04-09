@@ -33,3 +33,5 @@ fields:
     labelField: 
   label: Team member
   description: Data for a team member
+pages:
+- page_data/team.md
