@@ -21,14 +21,14 @@ export default function Posts({ currentPage, pageCount, posts }) {
               } ${months[date_created.getMonth()]}, ${date_created.getFullYear()}`;
 
               return (
-                <div key={val.path} className="text-left mb-8">
-                  <h4 className="font-bold italic text-3xl first:text-4xl">
+                <div key={val.path} className="text-left body-text-left body-text-lato mb-8">
+                  <h3 className="font-bold italic text-3xl first:text-4xl">
                     <Link href={`/post/${val.path}`}>
                       <a className="underline">{val.title}</a>
                     </Link>
                     <span className="text-xs font-normal ml-4">{date_created_string}</span>
-                  </h4>
-                  <p className="text-base text-gray-700 pt-5">{val.excerpt}...</p>
+                  </h3>
+                  <p className="body-text">{val.excerpt}...</p>
                 </div>
               );
             })}

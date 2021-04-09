@@ -11,7 +11,7 @@ export default function StyledMarkdown({ renderers, ...props }) {
         case 3:
           return <h3 className="font-bold italic text-3xl first:text-4xl">{children}</h3>;
         case 4:
-          return <h4>{children}</h4>;
+          return <h4 className="font-bold text-2xl first:text-3xl">{children}</h4>;
         case 5:
           return <h5>{children}</h5>;
         case 6:
