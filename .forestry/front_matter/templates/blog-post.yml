@@ -6,14 +6,14 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Title
   description: Title of the post/article
 - name: created
   type: datetime
   config:
-    required: false
-    date_format: 
+    required: true
+    date_format: ''
     time_format: 
     display_utc: false
   default: now
@@ -24,7 +24,7 @@ fields:
   type: datetime
   description: The last time a modification was made to the file
   config:
-    required: false
+    required: true
     date_format: 
     time_format: 
     display_utc: false
