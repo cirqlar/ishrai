@@ -32,6 +32,6 @@ fields:
     max: 
     labelField: 
   label: Team member
-  description: Data for a team member
+  description: Data for team members
 pages:
 - page_data/team.md
