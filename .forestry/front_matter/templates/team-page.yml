@@ -1,4 +1,35 @@
 ---
 label: Team Page
 hide_body: true
-fields: []
+fields:
+- name: team_member
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Name
+    description: Team member's full name
+  - name: role
+    type: text
+    config:
+      required: true
+    label: Role
+    description: Team member's role in the organisation
+  - name: bio
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Bio
+    description: Team member's bio
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Team member
+  description: Data for a team member
