@@ -35,6 +35,3 @@ yarn-error.log*
 
 # editor
 .vscode
-
-# forestry admin
-./public/admin/index.html
