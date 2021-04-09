@@ -5,7 +5,7 @@ fields:
 - name: banner_title
   type: text
   config:
-    required: false
+    required: true
   label: Banner Title
   description: Title displayed on the home page banner
 - name: banner_subtitle
@@ -30,7 +30,7 @@ fields:
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: true
     schema:
       format: markdown
