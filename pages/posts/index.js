@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
+import PageTitle from "../../components/layout/pageTitle";
 import PageHeading from "../../components/shared/page_heading";
 import { getPostCount } from "../../utils/posts";
 import { default as Posts, getStaticProps as postPageGetStaticProps } from "./[page].js";
@@ -10,6 +11,7 @@ export default function PostsIndex({ postsAvailable, pageProps }) {
     <Posts {...pageProps} />
   ) : (
     <>
+      <PageTitle title="News and Blog" />
       <PageHeading heading="News/Blog" />
       <div className="flex flex-col justify-center text-center items-center page-padding py-12">
         <h1 className="text-3xl font-bold">There are no articles right now</h1>

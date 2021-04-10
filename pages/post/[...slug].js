@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 
+import PageTitle from "../../components/layout/pageTitle";
 import StyledMarkdown from "../../components/markdown/styledMarkdown";
 import { getPostData, getSortedPosts } from "../../utils/posts";
 
@@ -28,6 +29,7 @@ export default function Post({ post, previous, next }) {
 
   return (
     <>
+      <PageTitle title={post.title} desc={post.excerpt} />
       <div className="page-padding py-12 text-center flex flex-col items-center">
         <h1 className="font-bold text-4xl first:text-5xl">{post.title}</h1>
         <p className="italic text-xl first:text-2xl text-gray-800 pt-4">Published {date_created_string}</p>

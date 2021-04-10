@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import PageTitle from "../../components/layout/pageTitle";
 import PageHeading from "../../components/shared/page_heading";
 import LinkPagination from "../../components/shared/pagination";
 import { getNumPages, getPage, getPostCount } from "../../utils/posts";
@@ -9,6 +10,7 @@ export default function Posts({ currentPage, pageCount, posts }) {
 
   return (
     <>
+      <PageTitle title="News and Blog" />
       <PageHeading heading="News/Blog" />
       <div className="page-padding py-12 text-center flex flex-col items-center">
         <div className="w-full max-w-4xl flex">
