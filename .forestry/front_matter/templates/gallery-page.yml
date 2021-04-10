@@ -23,3 +23,5 @@ fields:
     labelField: 
   label: Image
   description: An image
+pages:
+- page_data/gallery.md
