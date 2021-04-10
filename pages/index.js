@@ -55,7 +55,7 @@ export default function Home({ data }) {
           <HomeIcon className="mx-8 pb-4" icon={<FaBalanceScale size="45px" />} title="Human Rights" />
           <HomeIcon className="mx-8 pb-4" icon={<BiFemale size="45px" />} title="Women's Rights" />
         </div>
-        <Link href="/whatwedo">
+        <Link href="/under_construction">
           <a className="link-button mt-5">Learn More</a>
         </Link>
       </div>
