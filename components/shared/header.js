@@ -92,7 +92,7 @@ export default function Header({ className }) {
               <Link href="/team">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Meet The Team</a>
               </Link>
-              <Link href="/whatwedo">
+              <Link href="/under_construction">
                 <a className={cn(styles.link_item, styles.submenu_link)}>What we do</a>
               </Link>
             </div>
