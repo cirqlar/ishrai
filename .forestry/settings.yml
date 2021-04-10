@@ -22,6 +22,10 @@ sections:
 - type: document
   path: page_data/team.md
   label: The Team
+- type: document
+  path: page_data/gallery.md
+  label: Gallery
+  match: "**/*"
 upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''
