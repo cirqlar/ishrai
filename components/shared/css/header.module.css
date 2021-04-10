@@ -37,11 +37,23 @@
   .link_item.submenu_link {
     @apply border-0;
   }
+
+  .link_item:focus, .link_item:hover, .nav_item:focus, .nav_item:hover {
+    @apply text-blue-700;
+  }
 }
 
 @screen second {
   nav > .link_item:not(.submenu_link):last-child {
     @apply mr-4;
+  }
+
+  .dropdownSecond {
+    top: 120%;
+    @apply px-3 py-3;
+    @apply bg-white border border-gray-300 rounded;
+    @apply text-sm;
+    @apply w-32 shadow-lg;
   }
 
   .expandedDropdown {
@@ -50,7 +62,7 @@
     @apply w-auto shadow-none;
   }
 
-  .expandedDropdown .submenu_link {
+  .expandedDropdown > .submenu_link {
     top: 0;
     @apply border-0 p-0;
     @apply inline-block;
