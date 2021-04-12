@@ -28,7 +28,7 @@ function getExcerpt(originalString, length = 280) {
 }
 
 export async function getInitialPosts() {
-  const context = require.context("../posts", false, /\.md$/);
+  const context = require.context("../posts", true, /\.md$/);
 
   const posts = [];
 
