@@ -29,3 +29,4 @@ fields:
     time_format: 
     display_utc: false
   label: Last Modified
+  default: now
