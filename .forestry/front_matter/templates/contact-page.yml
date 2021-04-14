@@ -67,3 +67,5 @@ fields:
     labelField: 
   label: Social Media Contact Info
   description: Handles for social media
+pages:
+- page_data/contact.md
