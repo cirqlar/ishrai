@@ -58,7 +58,7 @@ fields:
   - name: handle
     type: text
     config:
-      required: false
+      required: true
     label: Handle
     description: The social media handle
   config:
