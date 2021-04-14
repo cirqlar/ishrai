@@ -1,7 +1,7 @@
 ---
-created: 2021-04-12T13:44:08Z
+created: 2021-04-12T13:44:08.000+00:00
 title: Intersecting issues obstructing climate and reproductive justice (Tobi Ayodele)
-last_modified: 2021-04-11T23:00:00Z
+last_modified: 2021-04-12T01:44:00Z
 
 ---
 ![](/uploads/woman-with-water.jpg)

@@ -29,5 +29,4 @@ fields:
     time_format: 
     display_utc: false
   label: Last Modified
-pages:
-- posts/Climate and Gender/intersecting-issues-obstructing-climate-and-reproductive-justice-tobi-ayodele.md
+  default: now
