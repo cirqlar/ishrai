@@ -13,7 +13,7 @@ export default function Partners({ partners }) {
         <div className="page-padding py-12 text-center flex flex-col items-center">
           <div className="pt-6 flex flex-wrap justify-center items-start">
             {partners.map((partner) => (
-              <a key={partner.name} href={partner.url} target="_blank">
+              <a key={partner.name} href={partner.url} target="_blank" rel="noreferrer">
                 <img className=" max-h-40 pb-6 pr-6" src={partner.image} alt={partner.name} />
               </a>
             ))}

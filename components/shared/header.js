@@ -158,13 +158,13 @@ export default function Header({ className }) {
           </div>
         </nav>
         <div className="flex justify-center pt-2 first:p-0 first:ml-4">
-          <a href="https://www.facebook.com/ishrai.nigeria.7" target="_blank">
+          <a href="https://www.facebook.com/ishrai.nigeria.7" target="_blank" rel="noreferrer">
             <FaFacebookSquare {...socialIconProperties} className="mr-2" />
           </a>
-          <a href="https://www.instagram.com/ishrai_n/" target="_blank">
+          <a href="https://www.instagram.com/ishrai_n/" target="_blank" rel="noreferrer">
             <FaInstagramSquare {...socialIconProperties} className="mr-2" />
           </a>
-          <a href="https://www.linkedin.com/company/ishrai/" target="_blank">
+          <a href="https://www.linkedin.com/company/ishrai/" target="_blank" rel="noreferrer">
             <FaLinkedin {...socialIconProperties} />
           </a>
         </div>
