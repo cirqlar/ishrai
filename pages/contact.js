@@ -51,6 +51,7 @@ export default function Contact({ general, social }) {
                       key={info.type + info.handle}
                       href={`https://www.facebook.com/${info.handle}`}
                       target="_blank"
+                      rel="noreferrer"
                       className="mt-4"
                     >
                       <FaFacebookSquare {...socialIconProperties} className="mr-2 inline-block" />{" "}
@@ -63,6 +64,7 @@ export default function Contact({ general, social }) {
                       key={info.type + info.handle}
                       href={`https://www.instagram.com/${info.handle}/`}
                       target="_blank"
+                      rel="noreferrer"
                       className="mt-2"
                     >
                       <FaInstagramSquare {...socialIconProperties} className="mr-2 inline-block" />{" "}
@@ -75,6 +77,7 @@ export default function Contact({ general, social }) {
                       key={info.type + info.handle}
                       href={`https://www.linkedin.com/company/${info.handle}/`}
                       target="_blank"
+                      rel="noreferrer"
                       className="mt-2"
                     >
                       <FaLinkedin {...socialIconProperties} className="mr-2 inline-block" />
@@ -87,6 +90,7 @@ export default function Contact({ general, social }) {
                       key={info.type + info.handle}
                       href={`https://twitter.com/${info.handle}/`}
                       target="_blank"
+                      rel="noreferrer"
                       className="mt-2"
                     >
                       <FaTwitterSquare {...socialIconProperties} className="mr-2 inline-block" />
