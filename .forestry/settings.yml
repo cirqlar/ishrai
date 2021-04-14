@@ -22,15 +22,12 @@ sections:
 - type: document
   path: page_data/whatwedo.md
   label: What We Do Data
-  match: "**/*"
 - type: document
   path: page_data/contact.md
   label: Contact Info
-  match: "**/*"
 - type: document
   path: page_data/partners.md
   label: Partner Data
-  match: "**/*"
 - type: document
   path: page_data/team.md
   label: Team Data
