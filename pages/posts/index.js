@@ -1,7 +1,5 @@
-import Link from "next/link";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-
 import PageTitle from "../../components/layout/pageTitle";
+import EmptyState from "../../components/shared/emptyState";
 import PageHeading from "../../components/shared/page_heading";
 import { getPostCount } from "../../utils/posts";
 import { default as Posts, getStaticProps as postPageGetStaticProps } from "./[page].js";
@@ -13,15 +11,7 @@ export default function PostsIndex({ postsAvailable, pageProps }) {
     <>
       <PageTitle title="News and Blog" />
       <PageHeading heading="News/Blog" />
-      <div className="flex flex-col justify-center text-center items-center page-padding py-12">
-        <h1 className="text-3xl font-bold">There are no articles right now</h1>
-        <p className="text-lg italic pt-4">Please come back later</p>
-        <Link href="/">
-          <a className="mt-6 py-3 px-5 border border-gray-300 rounded hover:bg-gray-600 hover:border-gray-600 hover:text-white hover:shadow-md focus:bg-gray-600 focus:border-gray-600 focus:text-white focus:shadow-md transition">
-            Go Home <HiOutlineArrowNarrowRight className="inline-block" />
-          </a>
-        </Link>
-      </div>
+      <EmptyState title="There are no articles right now" />
     </>
   );
 }

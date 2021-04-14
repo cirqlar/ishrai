@@ -1,0 +1,33 @@
+---
+label: Partners
+hide_body: true
+fields:
+- name: partners
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Name
+    description: Partner Name
+  - name: url
+    type: text
+    config:
+      required: true
+    label: Website Url
+    description: Partner URL
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Partner Image
+    description: The Partner's Image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Partners
+  description: Partner Data
+pages:
+- page_data/partners.md

@@ -1,0 +1,75 @@
+---
+label: Contact Page
+hide_body: true
+fields:
+- name: general
+  type: field_group_list
+  fields:
+  - name: type
+    type: select
+    default: []
+    config:
+      required: true
+      options:
+      - email
+      - address
+      - phone
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
+    description: Contact type
+  - name: data
+    type: text
+    config:
+      required: true
+    label: Data
+    description: The contact info
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: General Contact Info
+  description: General Contact Info
+- name: social
+  type: field_group_list
+  fields:
+  - name: type
+    type: select
+    default: []
+    config:
+      required: true
+      options:
+      - twitter
+      - facebook
+      - linkedin
+      - instagram
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    description: The social media platform
+    label: Platform
+  - name: handle
+    type: text
+    config:
+      required: true
+    label: Handle
+    description: The social media handle
+  - name: display
+    type: text
+    config:
+      required: false
+    label: Display
+    description: "(only used for facebook) Displayed name"
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Social Media Contact Info
+  description: Handles for social media
+pages:
+- page_data/contact.md

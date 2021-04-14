@@ -20,8 +20,17 @@ sections:
   path: page_data/about.md
   label: About ISHRAI
 - type: document
+  path: page_data/whatwedo.md
+  label: What We Do Data
+- type: document
+  path: page_data/contact.md
+  label: Contact Info
+- type: document
+  path: page_data/partners.md
+  label: Partner Data
+- type: document
   path: page_data/team.md
-  label: The Team
+  label: Team Data
 - type: document
   path: page_data/gallery.md
   label: Gallery
