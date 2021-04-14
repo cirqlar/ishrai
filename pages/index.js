@@ -6,7 +6,7 @@ import { FaTransgender, FaBalanceScale } from "react-icons/fa";
 
 import HomeIcon from "../components/icon_containers/home_icons";
 
-export default function Home({ data }) {
+export default function Home({ data, partners }) {
   const { banner_title, banner_subtitle, about_us, banner_image, banner_image_alt } = data;
 
   return (
@@ -59,29 +59,23 @@ export default function Home({ data }) {
           <a className="link-button mt-5">Learn More</a>
         </Link>
       </div>
-      <div className="page-padding py-12 text-center flex flex-col items-center">
-        <h3 className="font-bold italic text-3xl first:text-4xl">Our Partners</h3>
-        <div className="pt-10 flex flex-wrap justify-center items-start">
-          <a href="https://www.heartlandalliance.org/heartland-alliance-international/" target="_blank">
-            <img className=" max-h-32 pb-4 pr-4" src="/partners/heartland_alliance.png" alt="Heartland Alliance" />
-          </a>
-          <a href="https://www.isdao.org/home/" target="_blank">
-            <img className=" max-h-32 pb-4 pr-4" src="/partners/ISDAO.png" alt="ISDAO" />
-          </a>
-          <a href="https://frontlineaids.org/" target="_blank">
-            <img className=" max-h-32 pb-4 pr-4" src="/partners/FrontlineAIDS.png" alt="Frontline AIDS" />
-          </a>
-          <a href="https://viivhealthcare.com/en-gb/" target="_blank">
-            <img className=" max-h-32 pb-4 pr-4" src="/partners/viiv.png" alt="VIIV" />
-          </a>
-          {/* <a href="https://apin.org.ng/" target="_blank">
-            <img className=" max-h-32 pb-4 pr-4" src="/partners/apin.png" alt="VIIV" />
-          </a> */}
+      {partners && partners.length > 0 ? (
+        <div className="page-padding py-12 text-center flex flex-col items-center">
+          <h3 className="font-bold italic text-3xl first:text-4xl">Our Partners</h3>
+          <div className="pt-10 flex flex-wrap justify-center items-start">
+            {partners.slice(0, 4).map((partner) => (
+              <a key={partner.name} href={partner.url} target="_blank">
+                <img className=" max-h-32 pb-4 pr-4" src={partner.image} alt={partner.name} />
+              </a>
+            ))}
+          </div>
+          <Link href="/partners">
+            <a className="link-button mt-10">See More</a>
+          </Link>
         </div>
-        <Link href="/partners">
-          <a className="link-button mt-10">See More</a>
-        </Link>
-      </div>
+      ) : (
+        ""
+      )}
     </>
   );
 }
@@ -90,9 +84,13 @@ export async function getStaticProps() {
   let indexFile = await import("../page_data/index.md");
   let indexData = matter(indexFile.default);
 
+  let partnersFile = await import("../page_data/partners.md");
+  let partnersData = matter(partnersFile.default);
+
   return {
     props: {
       data: indexData.data,
+      partners: partnersData?.data?.partners,
     },
   };
 }

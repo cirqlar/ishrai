@@ -1,13 +1,13 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import matter from "gray-matter";
-import Link from "next/link";
 import Image from "next/image";
 import cn from "classnames";
 import ReactModal from "react-modal";
-import { HiOutlineArrowNarrowRight, HiX } from "react-icons/hi";
+import {  HiX } from "react-icons/hi";
 
 import PageTitle from "../../components/layout/pageTitle";
 import PageHeading from "../../components/shared/page_heading";
+import EmptyState from "../../components/shared/emptyState";
 
 import styles from "./gallery.module.css";
 
@@ -79,15 +79,7 @@ export default function Gallery({ images }) {
           </ReactModal>
         </div>
       ) : (
-        <div className="flex flex-col justify-center text-center items-center page-padding py-12">
-          <h1 className="text-3xl font-bold">There are no pictures right now</h1>
-          <p className="text-lg italic pt-4">Please come back later</p>
-          <Link href="/">
-            <a className="mt-6 py-3 px-5 border border-gray-300 rounded hover:bg-gray-600 hover:border-gray-600 hover:text-white hover:shadow-md focus:bg-gray-600 focus:border-gray-600 focus:text-white focus:shadow-md transition">
-              Go Home <HiOutlineArrowNarrowRight className="inline-block" />
-            </a>
-          </Link>
-        </div>
+        <EmptyState title="There are no pictures right now" />
       )}
     </>
   );
