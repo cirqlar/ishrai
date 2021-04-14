@@ -46,8 +46,6 @@ fields:
       - facebook
       - linkedin
       - instagram
-      - snapchat
-      - tiktok
       source:
         type: simple
         section: 
