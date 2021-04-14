@@ -60,7 +60,7 @@ export default function Home({ data, partners, what_we_do }) {
           <h3 className="font-bold italic text-3xl first:text-4xl">Our Partners</h3>
           <div className="pt-10 flex flex-wrap justify-center items-start">
             {partners.slice(0, 4).map((partner) => (
-              <a key={partner.name} href={partner.url} target="_blank">
+              <a key={partner.name} href={partner.url} target="_blank" rel="noreferrer">
                 <img className=" max-h-32 pb-4 pr-4" src={partner.image} alt={partner.name} />
               </a>
             ))}
