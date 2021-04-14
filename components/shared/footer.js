@@ -40,7 +40,7 @@ export default function Footer({ className }) {
         <Link href="/team">
           <a className={cn("")}>Meet The Team</a>
         </Link>
-        <Link href="/under_construction">
+        <Link href="/whatwedo">
           <a className={cn("")}>What we do</a>
         </Link>
         <Link href="/under_construction">
