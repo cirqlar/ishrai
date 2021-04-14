@@ -33,3 +33,5 @@ fields:
     labelField: 
   label: Item
   description: List of what we do
+pages:
+- page_data/whatwedo.md
