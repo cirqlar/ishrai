@@ -1,0 +1,37 @@
+---
+label: What We Do Page
+hide_body: true
+fields:
+- name: item
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+    description: The title of this what we do
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: Icon
+    description: The icon
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+    description: The description
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Item
+  description: List of what we do
+pages:
+- page_data/whatwedo.md
