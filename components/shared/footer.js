@@ -62,13 +62,13 @@ export default function Footer({ className }) {
           <a href="mailto:ishrainigeria@gmail.com">ishrainigeria@gmail.com</a>
         </p>
         <div className="flex justify-center pt-4">
-          <a aria-label="Facebook" href="https://www.facebook.com/ishrai.nigeria.7" target="_blank">
+          <a aria-label="Facebook" href="https://www.facebook.com/ishrai.nigeria.7" target="_blank" rel="noreferrer">
             <FaFacebookSquare {...socialIconProperties} className="mr-2" />
           </a>
-          <a aria-label="Instagram" href="https://www.instagram.com/ishrai_n/" target="_blank">
+          <a aria-label="Instagram" href="https://www.instagram.com/ishrai_n/" target="_blank" rel="noreferrer">
             <FaInstagramSquare {...socialIconProperties} className="mr-2" />
           </a>
-          <a aria-label="LinkedIn" href="https://www.linkedin.com/company/ishrai/" target="_blank">
+          <a aria-label="LinkedIn" href="https://www.linkedin.com/company/ishrai/" target="_blank" rel="noreferrer">
             <FaLinkedin {...socialIconProperties} />
           </a>
         </div>

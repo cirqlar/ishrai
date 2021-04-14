@@ -43,7 +43,7 @@ export default function Home({ data, partners, what_we_do }) {
               <HomeIcon
                 key={item.title}
                 className="mx-8 pb-4"
-                icon={<img src={item.icon} style={{maxWidth: "48px", maxHeight: "48px"}} />}
+                icon={<img src={item.icon} alt={item.title} style={{maxWidth: "48px", maxHeight: "48px"}} />}
                 title={item.title}
               />
             ))}
