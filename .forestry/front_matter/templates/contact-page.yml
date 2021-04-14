@@ -61,6 +61,12 @@ fields:
       required: true
     label: Handle
     description: The social media handle
+  - name: display
+    type: text
+    config:
+      required: false
+    label: Display
+    description: "(only used for facebook) Displayed name"
   config:
     min: 
     max: 
