@@ -48,7 +48,7 @@ export default function Home({ data, partners, what_we_do }) {
               />
             ))}
           </div>
-          <Link href="/under_construction">
+          <Link href="/whatwedo">
             <a className="link-button mt-5">Learn More</a>
           </Link>
         </div>
