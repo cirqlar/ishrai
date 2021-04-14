@@ -29,3 +29,5 @@ fields:
     labelField: 
   label: Partners
   description: Partner Data
+pages:
+- page_data/partners.md
