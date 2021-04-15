@@ -7,6 +7,7 @@ fields:
   label: Sections
   template_types:
   - banner-section
+  - picture-beside-text
   config:
     min: 
     max: 
