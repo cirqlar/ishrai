@@ -23,7 +23,7 @@ fields:
 - name: image_description
   type: text
   config:
-    required: false
+    required: true
   label: Background Image Description
   description: 'The description of the image '
 - name: use_link
