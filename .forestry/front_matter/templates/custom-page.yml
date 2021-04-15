@@ -12,3 +12,5 @@ fields:
     min: 
     max: 
   description: Sections on this page other than the main text
+pages:
+- page_data/donations.md
