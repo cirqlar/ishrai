@@ -118,13 +118,13 @@ export default function Header({ className }) {
                 styles.expandedDropdown
               )}
             >
-              <Link href="/under_construction">
+              <Link href="/donations">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Donations</a>
               </Link>
               <Link href="/contact">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Contact Us</a>
               </Link>
-              <Link href="/under_construction">
+              <Link href="/safehouse">
                 <a className={cn(styles.link_item, styles.submenu_link)}>Safehouse</a>
               </Link>
               <div ref={posts} className="second:inline-block relative">
