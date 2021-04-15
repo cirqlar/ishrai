@@ -1,4 +1,64 @@
 ---
 label: Banner Section
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: The banner title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+  description: The banner subtitle
+- name: use_color
+  type: boolean
+  label: Use Color
+  description: Use color for background instead of image
+- name: background_image
+  type: file
+  config:
+    maxSize: 64
+  label: Background Image
+  description: The background image
+  showOnly:
+    field: use_color
+- name: background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: RGB
+  description: The background color
+  default: rgb(127, 127, 127)
+  showOnly:
+    field: use_color
+    value: true
+- name: use_link
+  type: boolean
+  label: Use Link
+  description: Should this banner have a link?
+- name: link
+  type: field_group
+  config: {}
+  fields:
+  - name: text
+    type: text
+    config:
+      required: true
+    label: Link Text
+    description: The text to show on the button
+  - name: url
+    type: text
+    config:
+      required: true
+    label: Link Url
+    description: The URL to show on the button
+  label: Link
+  description: Link for the banner button
+  showOnly:
+    field: use_link
+    value: true
