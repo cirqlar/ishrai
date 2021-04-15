@@ -1,4 +1,49 @@
 ---
 label: Picture Beside Text
 hide_body: true
-fields: []
+fields:
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Text
+  description: The text for this section.
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  description: The image for this section
+- name: image_right
+  type: boolean
+  label: Image Right
+  description: The side the image should be on. (On is Right, Off is Left)
+- name: use_link
+  type: boolean
+  label: Use Link
+  description: Should this section have a button?
+- name: link
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+    description: The title shown on the button
+  - name: url
+    type: text
+    config:
+      required: true
+    label: Url
+    description: The URL for the button
+  label: Link
+  description: The link this section will use
+  showOnly:
+    field: use_link
+    value: true
