@@ -5,7 +5,8 @@ fields:
 - name: sections
   type: blocks
   label: Sections
-  template_types: []
+  template_types:
+  - banner-section
   config:
     min: 
     max: 
