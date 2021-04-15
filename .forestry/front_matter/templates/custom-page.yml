@@ -1,4 +1,12 @@
 ---
 label: Custom Page
 hide_body: false
-fields: []
+fields:
+- name: sections
+  type: blocks
+  label: Sections
+  template_types: []
+  config:
+    min: 
+    max: 
+  description: Sections on this page other than the main text
