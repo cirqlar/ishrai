@@ -14,3 +14,4 @@ fields:
   description: Sections on this page other than the main text
 pages:
 - page_data/donations.md
+- page_data/safehouse.md
