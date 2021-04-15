@@ -21,7 +21,7 @@ export default function WhatWeDo({ items }) {
               <ExIcon
                 key={item.title}
                 className="pb-8"
-                icon={<img src={item.icon} style={{maxWidth: "48px", maxHeight: "48px"}} />}
+                icon={<img src={item.icon} alt={item.title} style={{maxWidth: "48px", maxHeight: "48px"}} />}
                 title={item.title}
                 text={item.description}
                 alignRight={index % 2 != 0}
