@@ -30,7 +30,7 @@ fields:
   type: color
   label: Background Color
   config:
-    required: false
+    required: true
     color_format: RGB
   description: The background color
   default: rgb(127, 127, 127)
