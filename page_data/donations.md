@@ -19,8 +19,8 @@ sections:
   link:
     text: Contact Us
     url: "/contact"
-  background_image: ''
-  image_description: ''
+  background_image: "/uploads/rectangle-4.png"
+  image_description: A book in the light
   text_color: rgb(255, 255, 255)
 
 ---
