@@ -45,6 +45,16 @@ fields:
   showOnly:
     field: use_color
     value: true
+- name: text_color
+  type: color
+  label: Text Color
+  config:
+    required: false
+    color_format: RGB
+  description: The color of the text on the banner
+  showOnly:
+    field: use_color
+    value: true
 - name: use_link
   type: boolean
   label: Use Link
