@@ -24,7 +24,7 @@ export default function Banner({ title, subtitle, background_image: image, image
           {subtitle && <p className="pt-4 text-sm italic w-60 first:text-lg first:w-96">{subtitle}</p>}
         </div>
         {use_link && (
-          <div className="flex-grow flex justify-center items-center">
+          <div className="first:flex-grow flex mt-4 first:mt-0 first:justify-center items-center">
             <Link href={link.url}>
               <a className="link-button-big">{link.text}</a>
             </Link>

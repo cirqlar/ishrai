@@ -7,7 +7,7 @@ about_us: Improved Sexual Health and Rights Advocacy Initiative (ISHRAI) is a no
   non-profit based organisation that aims to create a society void of discrimination
   of all persons based on actual or perceived gender identity, orientation, religious
   affiliation, race or ethnicity. This we through economic empowerment, education,
-  community dialogue, safe-shelter, responding to and preventing cases of gender-based
+  community dialogue, safe shelter, responding to and preventing cases of gender-based
   violence.
 banner_image_alt: Hands Raised
 
