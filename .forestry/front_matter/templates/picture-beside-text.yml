@@ -18,6 +18,12 @@ fields:
     maxSize: 64
   label: Image
   description: The image for this section
+- name: description
+  type: text
+  config:
+    required: true
+  label: Image Description
+  description: Description of the image
 - name: image_right
   type: boolean
   label: Image Right
@@ -33,13 +39,13 @@ fields:
   - name: title
     type: text
     config:
-      required: true
+      required: false
     label: Title
     description: The title shown on the button
   - name: url
     type: text
     config:
-      required: true
+      required: false
     label: Url
     description: The URL for the button
   label: Link
