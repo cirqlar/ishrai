@@ -21,6 +21,7 @@ sections:
     url: "/contact"
   background_image: ''
   image_description: ''
+  text_color: rgb(255, 255, 255)
 
 ---
 Here at ISHRAI, our work requires a lot. We strive daily to ensure that no one is left alone without basic amenities and the help they need. Doing this is no cheap task and it takes a lot of money to keep us going. Being an NGO, we don't make any money from this, but our reward is the change we can facilitate in the lives of those we help/save.
