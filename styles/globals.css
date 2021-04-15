@@ -64,7 +64,17 @@
       @apply transition-all duration-150;
     }
 
+    .link-button-big {
+      @apply text-lg font-bold;
+      @apply px-5 py-3 block bg-green-500 rounded text-white;
+      @apply transition-all duration-150;
+    }
+
     .link-button:hover, .link-button:focus {
+      @apply bg-green-600 shadow-lg;
+    }
+
+    .link-button-big:hover, .link-button-big:focus {
       @apply bg-green-600 shadow-lg;
     }
 
