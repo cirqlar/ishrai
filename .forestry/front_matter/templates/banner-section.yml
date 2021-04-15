@@ -14,47 +14,18 @@ fields:
     required: false
   label: Subtitle
   description: The banner subtitle
-- name: use_color
-  type: boolean
-  label: Use Color
-  description: Use color for background instead of image
 - name: background_image
   type: file
   config:
     maxSize: 64
   label: Background Image
   description: The background image
-  showOnly:
-    field: use_color
 - name: image_description
   type: text
   config:
     required: false
   label: Background Image Description
   description: 'The description of the image '
-  showOnly:
-    field: use_color
-- name: background_color
-  type: color
-  label: Background Color
-  config:
-    required: true
-    color_format: RGB
-  description: The background color
-  default: rgb(127, 127, 127)
-  showOnly:
-    field: use_color
-    value: true
-- name: text_color
-  type: color
-  label: Text Color
-  config:
-    required: false
-    color_format: RGB
-  description: The color of the text on the banner
-  showOnly:
-    field: use_color
-    value: true
 - name: use_link
   type: boolean
   label: Use Link
