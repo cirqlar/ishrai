@@ -32,6 +32,12 @@ sections:
   path: page_data/team.md
   label: Team Data
 - type: document
+  path: page_data/donations.md
+  label: Donations
+- type: document
+  path: page_data/safehouse.md
+  label: Safehouse
+- type: document
   path: page_data/gallery.md
   label: Gallery
 upload_dir: public/uploads

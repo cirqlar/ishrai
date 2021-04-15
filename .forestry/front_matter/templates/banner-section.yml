@@ -1,0 +1,53 @@
+---
+label: Banner Section
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: The banner title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+  description: The banner subtitle
+- name: background_image
+  type: file
+  config:
+    maxSize: 64
+  label: Background Image
+  description: The background image
+- name: image_description
+  type: text
+  config:
+    required: true
+  label: Background Image Description
+  description: 'The description of the image '
+- name: use_link
+  type: boolean
+  label: Use Link
+  description: Should this banner have a link?
+- name: link
+  type: field_group
+  config: {}
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Link Text
+    description: The text to show on the button
+  - name: url
+    type: text
+    config:
+      required: false
+    label: Link Url
+    description: The URL to show on the button
+  label: Link
+  description: Link for the banner button
+  showOnly:
+    field: use_link
+    value: true
