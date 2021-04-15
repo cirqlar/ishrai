@@ -12,7 +12,7 @@ sections:
     url: ''
 - template: banner-section
   background_color: rgb(127, 127, 127)
-  title: Donate Today
+  title: Help our Initiative Grow
   subtitle: And help us save the world
   use_color: true
   use_link: true
