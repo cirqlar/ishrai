@@ -26,6 +26,14 @@ fields:
   description: The background image
   showOnly:
     field: use_color
+- name: image_description
+  type: text
+  config:
+    required: true
+  label: Background Image Description
+  description: 'The description of the image '
+  showOnly:
+    field: use_color
 - name: background_color
   type: color
   label: Background Color
@@ -48,13 +56,13 @@ fields:
   - name: text
     type: text
     config:
-      required: true
+      required: false
     label: Link Text
     description: The text to show on the button
   - name: url
     type: text
     config:
-      required: true
+      required: false
     label: Link Url
     description: The URL to show on the button
   label: Link
