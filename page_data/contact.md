@@ -1,7 +1,7 @@
 ---
 general:
 - type: email
-  data: ishrainigeria@gmail.com
+  data: ishraing@gmail.com
 - type: phone
   data: "+2348156843504"
 social:
