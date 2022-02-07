@@ -3,7 +3,7 @@ general:
 - type: email
   data: ishraing@gmail.com
 - type: phone
-  data: "+2348156843504"
+  data: "+2347033882333"
 social:
 - type: facebook
   handle: ishrai.nigeria.7
