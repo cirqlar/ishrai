@@ -1,8 +1,5 @@
 ---
 partners:
-- name: Google
-  url: https://viivhealthcare.com/en-gb/
-  image: "/uploads/screenshot-2022-01-18-at-11-11-50-am.png"
 - name: Heartland Alliance
   url: https://www.heartlandalliance.org/heartland-alliance-international/
   image: "/uploads/heartland_alliance.png"
