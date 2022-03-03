@@ -1,7 +1,7 @@
 ---
 created: 2022-03-03T07:52:28Z
 last_modified: 2022-03-03T07:52:28Z
-title: ISHRAI SAYS (LESBIANS)
+title: ISHRAI SAYS (LESBIANS) BY CYNTHIA NWAONYIRI
 
 ---
 **Lesbians! Talk about your sexual health issues**
