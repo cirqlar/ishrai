@@ -30,3 +30,5 @@ fields:
     display_utc: false
   label: Last Modified
   default: now
+pages:
+- posts/ishrai-says-lesbians.md
