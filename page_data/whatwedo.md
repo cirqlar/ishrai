@@ -1,13 +1,13 @@
 ---
 item:
-- title: Education
-  icon: "/uploads/education.png"
+- title: Health
+  icon: "/uploads/health.png"
   description: Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
     sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
     sunt nostrud amet. Exercitation veniam consequat sunt nostrud amet. Exercitation
     veniam consequat sunt nostrud amet.
-- title: Health
-  icon: "/uploads/health.png"
+- title: Education
+  icon: "/uploads/education.png"
   description: Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
     sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
     sunt nostrud amet. Exercitation veniam consequat sunt nostrud amet. Exercitation
